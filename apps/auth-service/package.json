@@ -1,0 +1,13 @@
+{
+  "name": "@seat/auth-service",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@seat/shared": "0.1.0"
+  }
+}

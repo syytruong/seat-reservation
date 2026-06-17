@@ -8,11 +8,14 @@
   "scripts": {
     "build": "npm run build -w @seat/shared && npm run build -ws --if-present",
     "build:shared": "npm run build -w @seat/shared",
+    "dev:auth": "npm run dev -w @seat/auth-service",
     "dev:web": "npm run dev -w @seat/web",
     "test": "echo \"No tests configured yet\""
   },
   "dependencies": {
     "amqplib": "^0.10.8",
+    "argon2": "^0.43.1",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "helmet": "^8.1.0",
@@ -25,6 +28,7 @@
   },
   "devDependencies": {
     "@types/amqplib": "^0.10.7",
+    "@types/cookie-parser": "^1.4.9",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/jsonwebtoken": "^9.0.10",
