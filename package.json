@@ -1,0 +1,15 @@
+{
+  "name": "seat-reservation",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -ws --if-present",
+    "test": "echo \"No tests configured yet\""
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
