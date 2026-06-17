@@ -1,0 +1,169 @@
+:root {
+  color: #15181f;
+  background: #f6f7f9;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  background: #155eef;
+  color: white;
+  cursor: pointer;
+  min-height: 44px;
+  padding: 0 18px;
+}
+
+button:disabled {
+  background: #b5bbc7;
+  cursor: not-allowed;
+}
+
+.ghost,
+.secondary {
+  background: #ffffff;
+  color: #155eef;
+  border: 1px solid #ccd3e0;
+}
+
+.shell {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.topbar p,
+.seat p,
+.checkout p {
+  color: #5d6678;
+  margin-top: 6px;
+}
+
+.auth-panel,
+.checkout,
+.status-line {
+  background: white;
+  border: 1px solid #dde2eb;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.auth-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 14px;
+  align-items: end;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  color: #4c5567;
+}
+
+input {
+  border: 1px solid #cbd3df;
+  border-radius: 8px;
+  min-height: 44px;
+  padding: 0 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.status-line,
+.checkout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.seat {
+  min-height: 190px;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  gap: 18px;
+  background: white;
+  border: 1px solid #dbe1eb;
+  border-top: 5px solid #1f9d55;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.seat.held {
+  border-top-color: #d97706;
+}
+
+.seat.reserved {
+  border-top-color: #5c6370;
+  background: #eef1f5;
+}
+
+.seat span {
+  font-weight: 700;
+}
+
+.checkout {
+  margin-top: 20px;
+}
+
+@media (max-width: 760px) {
+  .topbar,
+  .status-line,
+  .checkout,
+  .auth-panel {
+    align-items: stretch;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .seat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}

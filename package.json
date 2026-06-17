@@ -7,6 +7,7 @@
   ],
   "scripts": {
     "build": "npm run build -ws --if-present",
+    "dev:web": "npm run dev -w @seat/web",
     "test": "echo \"No tests configured yet\""
   },
   "devDependencies": {
