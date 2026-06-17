@@ -12,6 +12,10 @@
     "dev:seat": "npm run dev -w @seat/seat-service",
     "dev:payment": "npm run dev -w @seat/payment-service",
     "dev:web": "npm run dev -w @seat/web",
+    "migrate": "node scripts/migrate.mjs all",
+    "migrate:auth": "node scripts/migrate.mjs auth",
+    "migrate:seat": "node scripts/migrate.mjs seat",
+    "migrate:payment": "node scripts/migrate.mjs payment",
     "test": "echo \"No tests configured yet\""
   },
   "dependencies": {
